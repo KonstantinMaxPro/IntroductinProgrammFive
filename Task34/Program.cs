@@ -49,7 +49,7 @@ Console.WriteLine($"\nСоздан массив из {sizeOfCreatedArray} слу
 Console.WriteLine(string.Join(" ",ArrayOfThreeDigitNumbers));
 
 Console.WriteLine("=======================================");
-Console.Write("Найдено чётных чисел: ");
+Console.Write("Найдено чётных чисел в массиве: ");
 Console.ForegroundColor = ConsoleColor.Yellow; 
 Console.WriteLine(CountingNumberOfEvenNumbers(ArrayOfThreeDigitNumbers)); 
 Console.ResetColor();
