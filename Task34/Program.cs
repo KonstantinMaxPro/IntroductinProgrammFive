@@ -11,18 +11,16 @@
 
 int CountingNumberOfEvenNumbers(int[] arrayWithThreeDigitNumbers)//Находим и подсчитываем количество чётных чисел
 {
-        int countEvenNumbers = 0;
+    int countEvenNumbers = 0;
     for (int countIterationInArray = 0; countIterationInArray < arrayWithThreeDigitNumbers.Length; countIterationInArray++)
     {
         if(arrayWithThreeDigitNumbers[countIterationInArray] % 2 == 0)
         {
-
-        countEvenNumbers +=1;
+            countEvenNumbers +=1;
         }
     }        
     return countEvenNumbers;
 }
-
 
 int sizeOfCreatedArray = 4;
 int minValueRandomNumberInGeneratedArray = 100;
@@ -47,12 +45,9 @@ int[] ArrayOfThreeDigitNumbers = CreateArrayWithRandomValues(sizeOfCreatedArray,
 
 Console.WriteLine($"\nСоздан массив из {sizeOfCreatedArray} случайных чисел:");
 Console.WriteLine(string.Join(" ",ArrayOfThreeDigitNumbers));
-
 Console.WriteLine("=======================================");
 Console.Write("Найдено чётных чисел в массиве: ");
 Console.ForegroundColor = ConsoleColor.Yellow; 
 Console.WriteLine(CountingNumberOfEvenNumbers(ArrayOfThreeDigitNumbers)); 
 Console.ResetColor();
 Console.WriteLine("=======================================\n");
-
-
